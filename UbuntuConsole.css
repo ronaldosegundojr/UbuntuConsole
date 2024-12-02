@@ -1,0 +1,158 @@
+/* Estilos principais para o console Ubuntu */
+.console-ubuntu {
+  width: 100%;
+  max-width: 1200px; /* Largura máxima do console */
+  margin: 0 auto;
+  height: 100%;
+  min-height: 600px; /* Altura mínima maior para melhor visualização */
+  max-height: 800px; /* Altura máxima */
+  background-color: #151515; /* Cor de fundo do console */
+  border-radius: 10px; /* Bordas arredondadas */
+  border: 3px solid #fff; /* Borda branca ao redor do console */
+  overflow: hidden; /* Oculta conteúdo que excede o tamanho */
+}
+
+.console-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.console-header {
+  background-color: #494741; /* Cor de fundo do cabeçalho */
+  color: #00ff00; /* Cor do texto */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.menu {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.menu-item {
+  color: #DADBD2;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.directory {
+  color: green;
+}
+
+.console-body {
+  padding: 10px;
+  background-color: #2E0823; /* Cor de fundo da área de entrada */
+  color: #00ff00; /* Cor do texto */
+  font-family: "Ubuntu Bold", monospace;
+  height: 400px; /* Altura fixa com rolagem */
+  overflow-y: auto; /* Habilita rolagem vertical */
+  border: 3px solid #fff; /* Adiciona borda branca ao redor da área do console */
+}
+
+.console-body p {
+  margin-bottom: 20px;
+  color: #00ff00;
+}
+
+.console-body p {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Ubuntu Bold", monospace;
+}
+
+.console-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #151515;
+}
+
+.prompt {
+  color: rgb(209, 255, 4); /* Cor do texto do prompt */
+  font-weight: bold;
+}
+
+#commandInput {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background: none;
+  color: #00ff00;
+  font-family: "Archivo", monospace;
+}
+
+#commandInput::placeholder {
+  font-weight: bold;
+  font: bold 16px Arial, sans-serif;
+  color: rgb(209, 255, 4); /* Cor do placeholder */
+}
+
+#cursor {
+  animation: blink 1s infinite; /* Efeito de piscar no cursor */
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.console-title {
+  color: #fff;
+  font-family: "Ubuntu Bold";
+  font-size: 3.2em; /* Tamanho grande para o título */
+  text-align: center;
+}
+
+.comandos {
+  color: #00ff00;
+  font-family: "Ubuntu Bold";
+  font-size: 1.2em; /* Tamanho ajustado para os comandos */
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .console-ubuntu {
+    max-width: 100%;
+    min-height: 400px; /* Ajusta altura mínima para dispositivos menores */
+  }
+}
+
+.larger-font {
+  font-size: 2.5em; /* Aumenta a fonte do texto */
+  font-family: "Ubuntu Bold";
+}
+
+.neo {
+  font-size: 1.5em;
+  font-family: "Ubuntu Bold";
+}
+
+@font-face {
+  color:#00ff00;
+  font-family: "Ubuntu Bold";
+  src: url('../../../fonts/Ubuntu-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
